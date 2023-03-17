@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css" />
+    <link rel="website icon" type="png"
+    href="https://www.clipartmax.com/png/middle/31-315703_512-x-512-do-list-icon-png.png"> 
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="https://res.cloudinary.com/dgwqzhddj/image/upload/v1679078761/31-315703_512-x-512-do-list-icon-png-removebg-preview_wd1fjv.png" alt="" class="img">
+            <div class="heading">
+                <img src="https://res.cloudinary.com/dgwqzhddj/image/upload/v1679079154/images-removebg-preview_jgfjve.png" class="img-size" alt="">
+                <h1 tabindex="-1" id="heading">To Do List</h1>
+            </div>
+            <form action="index.html" method="post" id="to_do_form">
+                <label for="todo" id="main_label">Add daily task to your list</label>
+                <div>
+                    <input type="text" class="task_input" aria-describedby="example" id="todo" placeholder="Enter the task" required>
+                    <input type="submit" value="Add" class="add_task">
+                </div>
+            </form>
+            <ul id="list" class="list">
+            </ul>
+            <div role="status" aria-live="polite" id="sc_feedback" class="sc_feedback"></div>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+
+</html>
